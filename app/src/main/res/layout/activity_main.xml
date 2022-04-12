@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Enter name below"
         android:id="@+id/signin_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,12 +31,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Type your name here" />
+        android:text="Type your name here"
+        app:layout_constraintTop_toBottomOf="@+id/signin_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="100dp"/>
 
     <Button
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in" />
+        android:text="Sign in"
+        app:layout_constraintTop_toBottomOf="@id/signin_name"
+        app:layout_constraintStart_toStartOf="@id/signin_name"
+        android:layout_marginLeft="50dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
